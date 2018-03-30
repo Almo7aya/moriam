@@ -1,7 +1,8 @@
-/* Main Colors
-* light blue rgb(173, 216, 230)
-* mid blue rgb(0, 0, 255)
-* dark blue rgb(0, 0, 139)
+/* 
+    COLORS:
+    Light green: #7ed56f
+    Medium green: #55c57a
+    Dark green: #28b485
 */
 
 * {
@@ -21,6 +22,7 @@ body {
   color: #777;
 
   padding: 30px;
+  padding-bottom: 0;
 }
 
 /*
@@ -30,14 +32,19 @@ body {
   height: 92vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(173, 216, 230, 0.8),
-      rgb(0, 0, 139, 0.8)
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
     ),
     url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-
   /* new stuff */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+}
+
+.logo {
 }
