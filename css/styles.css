@@ -5,17 +5,19 @@
     Dark green: #28b485
 */
 
-* {
+*,
+*::after,
+*::before {
   /* Reset the browser default */
   margin: 0;
   padding: 0;
   /* box model */
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
   /* the root rem  */
-  font-size: 10px;
+  font-size: 62.5%; /* = 10px */
 }
 
 body {
@@ -25,6 +27,8 @@ body {
   line-height: 1.7;
   font-size: 1.6rem;
   color: #777;
+
+  box-sizing: border-box;
 
   padding: 3rem;
   padding-bottom: 0;
