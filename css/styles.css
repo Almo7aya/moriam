@@ -13,15 +13,20 @@
   box-sizing: border-box;
 }
 
+html {
+  /* the root rem  */
+  font-size: 10px;
+}
+
 body {
   /* fonts styles */
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #777;
 
-  padding: 30px;
+  padding: 3rem;
   padding-bottom: 0;
 }
 
@@ -47,12 +52,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -66,7 +71,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin: 60px;
+  margin: 6rem;
 
   /* to fix the shake issue in the animation */
   backface-visibility: hidden;
@@ -75,8 +80,8 @@ body {
 .heading-primary-main {
   display: block;
   font-weight: 400;
-  letter-spacing: 43px;
-  font-size: 60px;
+  letter-spacing: 4.3rem;
+  font-size: 6rem;
 
   animation: fadeInLeft 1s ease-out;
 }
@@ -84,20 +89,20 @@ body {
 .heading-primary-sub {
   display: block;
   font-weight: 400;
-  letter-spacing: 9px;
-  font-size: 20px;
+  letter-spacing: 0.9rem;
+  font-size: 2rem;
   animation: fadeInRight 1s ease-out;
-  text-indent: -33px;
+  text-indent: -3.3rem;
 }
 
 /* fadeAnimatons  */
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
@@ -108,10 +113,10 @@ body {
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1);
   }
   100% {
     opacity: 1;
@@ -122,7 +127,7 @@ body {
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {
@@ -135,21 +140,21 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: 0.2s all;
   position: relative;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -160,7 +165,7 @@ body {
 .btn::after {
   content: "";
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   width: 100%;
   height: 100%;
 
