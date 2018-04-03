@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Almo7aya/moriam/issues"
   },
-  "homepage": "https://github.com/Almo7aya/moriam#readme"
+  "homepage": "https://github.com/Almo7aya/moriam#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
 }
