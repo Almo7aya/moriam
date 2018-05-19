@@ -35,21 +35,18 @@ body {
   background-position: top;
   /* new stuff */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
   color: #fff;
@@ -57,21 +54,19 @@ body {
   margin: 6rem;
   /* to fix the shake issue in the animation */
   backface-visibility: hidden; }
-
-.heading-primary--main {
-  display: block;
-  font-weight: 400;
-  letter-spacing: 4.3rem;
-  font-size: 6rem;
-  animation: fadeInLeft 1s ease-out; }
-
-.heading-primary--sub {
-  display: block;
-  font-weight: 400;
-  letter-spacing: 0.9rem;
-  font-size: 2rem;
-  animation: fadeInRight 1s ease-out;
-  text-indent: -3.3rem; }
+  .heading-primary--main {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 4.3rem;
+    font-size: 6rem;
+    animation: fadeInLeft 1s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.9rem;
+    font-size: 2rem;
+    animation: fadeInRight 1s ease-out;
+    text-indent: -3.3rem; }
 
 /* fadeAnimatons  */
 @keyframes fadeInLeft {

@@ -1,12 +1,10 @@
-
 // color vars
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
-
 $color-gray-dark: #777;
 $color-white: #fff;
-
+$color-black: #000;
 *,
 *::after,
 *::before {
@@ -48,24 +46,21 @@ body {
   background-position: top;
   /* new stuff */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo {
-  height: 3.5rem;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  &__logo {
+    height: 3.5rem;
+  }
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -74,23 +69,21 @@ body {
   margin: 6rem;
   /* to fix the shake issue in the animation */
   backface-visibility: hidden;
-}
-
-.heading-primary--main {
-  display: block;
-  font-weight: 400;
-  letter-spacing: 4.3rem;
-  font-size: 6rem;
-  animation: fadeInLeft 1s ease-out;
-}
-
-.heading-primary--sub {
-  display: block;
-  font-weight: 400;
-  letter-spacing: 0.9rem;
-  font-size: 2rem;
-  animation: fadeInRight 1s ease-out;
-  text-indent: -3.3rem;
+  &--main {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 4.3rem;
+    font-size: 6rem;
+    animation: fadeInLeft 1s ease-out;
+  }
+  &--sub {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.9rem;
+    font-size: 2rem;
+    animation: fadeInRight 1s ease-out;
+    text-indent: -3.3rem;
+  }
 }
 
 /* fadeAnimatons  */
@@ -147,12 +140,12 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 }
 
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 }
 
 .btn--white {
