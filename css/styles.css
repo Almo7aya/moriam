@@ -13,15 +13,7 @@ html {
   /* = 10px */ }
 
 body {
-  /* fonts styles */
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  font-size: 1.6rem;
-  color: #777;
-  box-sizing: border-box;
-  padding: 3rem;
-  padding-bottom: 0; }
+  box-sizing: border-box; }
 
 @keyframes fadeInLeft {
   0% {
@@ -50,6 +42,15 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  color: #777;
+  padding: 3rem;
+  padding-bottom: 0; }
 
 .heading-primary {
   color: #fff;
