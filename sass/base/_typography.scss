@@ -1,0 +1,22 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    margin: 6rem;
+    /* to fix the shake issue in the animation */
+    backface-visibility: hidden;
+    &--main {
+        display: block;
+        font-weight: 400;
+        letter-spacing: 4.3rem;
+        font-size: 6rem;
+        animation: fadeInLeft 1s ease-out;
+    }
+    &--sub {
+        display: block;
+        font-weight: 400;
+        letter-spacing: 0.9rem;
+        font-size: 2rem;
+        animation: fadeInRight 1s ease-out;
+        text-indent: -3.3rem;
+    }
+}

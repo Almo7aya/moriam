@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  /* Reset the browser default */
+  margin: 0;
+  padding: 0;
+  /* box model */
+  box-sizing: inherit;
+}
+
+html {
+  /* the root rem  */
+  font-size: 62.5%;
+  /* = 10px */
+}
+
+body {
+  /* fonts styles */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  color: $color-gray-dark;
+  box-sizing: border-box;
+  padding: 3rem;
+  padding-bottom: 0;
+}
