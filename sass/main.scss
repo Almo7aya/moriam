@@ -5,6 +5,7 @@ $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
 $color-gray-dark: #777;
+$color-white: #fff;
 
 *,
 *::after,
@@ -68,7 +69,7 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   margin: 6rem;
   /* to fix the shake issue in the animation */
@@ -156,7 +157,7 @@ body {
 
 .btn--white {
   color: $color-gray-dark;
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 .btn::after {
@@ -173,7 +174,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 .btn:hover::after {
