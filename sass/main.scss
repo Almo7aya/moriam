@@ -1,3 +1,9 @@
+
+// color vars
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
 *,
 *::after,
 *::before {
@@ -5,12 +11,14 @@
   margin: 0;
   padding: 0;
   /* box model */
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
   /* the root rem  */
   font-size: 62.5%;
-  /* = 10px */ }
+  /* = 10px */
+}
 
 body {
   /* fonts styles */
@@ -21,49 +29,57 @@ body {
   color: #777;
   box-sizing: border-box;
   padding: 3rem;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 /*
 *   Header styles
 */
+
 .header {
   position: relative;
   height: 92vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   /* new stuff */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
 
 .header__logo-box {
   position: absolute;
   top: 4rem;
-  left: 4rem; }
+  left: 4rem;
+}
 
 .header__logo {
-  height: 3.5rem; }
+  height: 3.5rem;
+}
 
 .header__text-box {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+}
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   margin: 6rem;
   /* to fix the shake issue in the animation */
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+}
 
 .heading-primary--main {
   display: block;
   font-weight: 400;
   letter-spacing: 4.3rem;
   font-size: 6rem;
-  animation: fadeInLeft 1s ease-out; }
+  animation: fadeInLeft 1s ease-out;
+}
 
 .heading-primary--sub {
   display: block;
@@ -71,36 +87,49 @@ body {
   letter-spacing: 0.9rem;
   font-size: 2rem;
   animation: fadeInRight 1s ease-out;
-  text-indent: -3.3rem; }
+  text-indent: -3.3rem;
+}
 
 /* fadeAnimatons  */
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-10rem);
+  }
   80% {
-    transform: translateX(1rem); }
+    transform: translateX(1rem);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(10rem);
+  }
   80% {
-    transform: translateX(-1); }
+    transform: translateX(-1);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem); }
+    transform: translateY(3rem);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 .btn:link,
 .btn:visited {
@@ -110,19 +139,23 @@ body {
   display: inline-block;
   border-radius: 10rem;
   transition: 0.2s all;
-  position: relative; }
+  position: relative;
+}
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
 
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
 
 .btn--white {
   color: #777;
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .btn::after {
   content: "";
@@ -134,14 +167,18 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+}
 
 .btn--white::after {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .btn:hover::after {
   transform: scale(1.8);
-  opacity: 0; }
+  opacity: 0;
+}
 
 .btn--animated {
-  animation: fadeInBottom 0.5s ease-out 0.7s backwards; }
+  animation: fadeInBottom 0.5s ease-out 0.7s backwards;
+}
